@@ -1,0 +1,29 @@
+
+/* CSS Variables */
+:root{
+    --background-color : rgba(0,152,179,255);
+    --header-img-width : 500px;
+}
+body, div {
+    box-sizing:border-box;
+}
+
+/* Universal backgroun color */
+body{
+    background-color : var(--background-color);
+}
+
+/* header image */
+header img {
+    width : var(--header-img-width);
+    max-width:98%;
+
+}
+/* clearfix to prevent image overflow */
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+
